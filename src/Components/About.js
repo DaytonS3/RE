@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Fade from "react-reveal";
+import Test from './Test'
 
 class About extends Component {
   render() {
@@ -28,11 +29,11 @@ class About extends Component {
               />
             </div>
             <div className="nine columns main-col">
-              <h2 style={{ color: 'black' }}>About Me</h2>
 
-              <p style={{ color: '#c4a747' }}>{bio}</p>
+
+              <p style={{ fontWeight: "bold", fontSize: '18px', color: '#c4a747' }}>{bio}</p>
               <div className="row">
-                <div className="columns contact-details">
+                {/* <div className="columns contact-details">
                   <h2 style={{ color: 'black' }}>Contact Details</h2>
                   <p style={{ color: '#c4a747' }} className="address">
                     <span>{name}</span>
@@ -47,11 +48,10 @@ class About extends Component {
                     <br />
                     <span>{email}</span>
                   </p>
-                </div>
-                <div className="columns download">
-                  <p>
-                    ADD HERE
-                  </p>
+                </div> */}
+                <div style={{ width: '100%' }} className="columns download">
+                  <h2 style={{ color: 'black' }}>Customer Reviews</h2>
+                  <Test />
                 </div>
               </div>
             </div>

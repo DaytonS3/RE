@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
-import background from "../img/home4.jpg";
+import background from "../img/home5_.mp4";
 
 
 class Header extends Component {
@@ -15,7 +15,11 @@ class Header extends Component {
 
     return (
       <header id="home" style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover', height: '100vh' }}>
-
+        <video id="background-video" loop autoPlay muted style={{ position: 'absolute', left: '0px' }}>
+          <source src={background} type="video/mp4" />
+          <source src={background} type="video/ogg" />
+          Your browser does not support the video tag.
+        </video>
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
@@ -58,7 +62,7 @@ class Header extends Component {
           </ul>
         </nav>
 
-        <div className="row banner" style={{ background: ' rgba(0,0,0,.5)', borderRadius: '10px' }}>
+        <div className="row banner" style={{ background: ' rgba(0,0,0,.5)', borderRadius: '10px', position: 'absolute', left: '25%', bottom: '100px' }}>
           <div className="banner-text">
             <Fade bottom>
               <h1 className="responsive-headline">{name}</h1>

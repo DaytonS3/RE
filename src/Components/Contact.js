@@ -79,6 +79,7 @@ class Contact extends Component {
                       Message <span className="required">*</span>
                     </label>
                     <textarea
+                      style={{ height: '200px' }}
                       cols="50"
                       rows="15"
                       id="contactMessage"
@@ -87,7 +88,7 @@ class Contact extends Component {
                   </div>
 
                   <div>
-                    <button className="submit">Submit</button>
+                    <button style={{ borderRadius: '10px' }} className="submit">Submit</button>
                     <span id="image-loader">
                       <img alt="" src="images/loader.gif" />
                     </span>
