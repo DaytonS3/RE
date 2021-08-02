@@ -1,8 +1,6 @@
 /*
 =====================================================================
-*   Ceevee v1.0 Layout Stylesheet
-*   url: styleshout.com
-*   03-18-2014
+
 =====================================================================
 
    TOC:
@@ -30,7 +28,7 @@ body { background: #0f0f0f; }
 
 header {
    position: relative;
-   height: 800px;
+   height: 80vh;
    min-height: 500px;
    width: 100%;
    
@@ -40,18 +38,18 @@ header {
 
 /* vertically center banner section */
 header:before {
+   position: relative;
    content: '';
-   display: inline-block;
-   vertical-align: middle;
-   height: 100%;
+   margin-top: 300px;
+   height: 80%;
 }
 header .banner {
-   display: inline-block;
-   vertical-align: middle;
-   margin: 0 auto;
-   width: 85%;
+   position: relative;
+   margin-top: 550px;
+   width: 100%;
    padding-bottom: 30px;
    text-align: center;
+   height: 35%;
 }
 
 header .banner-text { width: 100%; }
@@ -158,7 +156,7 @@ ul#nav li {
 ul#nav li a {
 
 /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
-
+   font-size: 20px; 
    display: inline-block;
    padding: 8px 13px;
    line-height: 32px;
@@ -174,7 +172,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #fe6928; }
+ul#nav li.current a { color: #b08f26;}
 
 
 /* ------------------------------------------------------------------ */
@@ -182,7 +180,7 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #000524;
+   background: white ;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -789,7 +787,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-   background: #191919;
+   background: #b08f26;
    padding-top: 96px;
    padding-bottom: 102px;
    color: #636363;
@@ -824,6 +822,7 @@ call-to-action .button {
    margin-bottom: 6px;
 }
 #contact p.lead {
+   color: white;
    font: 18px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
 }
@@ -845,7 +844,7 @@ call-to-action .button {
 #contact select {
    padding: 10px 20px;
 	color: #eee;
-	background: #373233;
+	background: white;
 	margin-bottom: 42px;
 	border: 0;
 	outline: none;
@@ -990,7 +989,7 @@ footer .social-links li:first-child { margin-left: 0; }
 	display: block;
 	width: 60px;
 	height: 60px;
-	background-color: #525252;
+	background-color: black;
 
 	-webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
